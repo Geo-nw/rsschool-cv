@@ -1,4 +1,5 @@
 _Software junior : Python, AI, JS, HTML, CSS, Git, VScode, PyCharm_.
+
 _Georgy Rizvanov N._
 [Email](mailto:neuron.np@.gmail.com) / [GitHub](https://github.com/Geo-nw/rsschool-cv)
 
