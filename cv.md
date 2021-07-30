@@ -33,6 +33,7 @@ My hobbies are scuba diving, traveling, cooking.
  - [Convolutional neural networks](https://colab.research.google.com/drive/1cJB-H3C7T8hIMuYkG0ZS2Lxhugd14cvw?usp=sharing)
  - [Text processing using neural networks](https://colab.research.google.com/drive/1dqWA6M3KGDVrfsXh3I1ROjVzBGwr5S4v)
 ***
+
 ##### Education
 2020 - 2021
 **University of artificial intelligece**
