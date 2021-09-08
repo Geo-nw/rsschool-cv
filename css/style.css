@@ -1,0 +1,67 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+
+.name-text {
+  display: flex;
+/*  width: 1000px; */
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+.skis-block {
+  display: flex;
+}
+.skills-name-text{
+  display: flex;
+  align-items: center;
+  padding-left: 125px;
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+.skills-text{
+  display: flex;
+  display: flex;
+  align-items: center;
+/*  width: 1000px; */
+padding-left: 20px;
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+.contact{
+  padding: 5px;
+}
+.line {
+  border: 2px 2px black;
+
+}

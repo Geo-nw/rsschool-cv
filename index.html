@@ -5,104 +5,114 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My CV</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class = "header">
-    <div class="wrapper"></div>
-      <h1>Georgy Rizvanov N.</h1>
-      <h2>Software junior : Python, AI, JS, HTML, CSS, Git, VScode, PyCharm.</h2>
-      <a href="#">E-mail</a>
-      <a href="https://github.com/Geo-nw/rsschool-cv">GitHub</a>
-      <img src="" alt="" class="my-photo">
+    <div class="wrapper">
+      <h1 class="name-text">Georgy Rizvanov N.</h1>
+      <div class="skis-block">
+        <img class="my-photo" src="assets/img/II.png" alt="my-photo">
+        <h2 class="skills-name-text">Software junior:</h2>
+        <h2 class="skills-text">Python, AI, JS, HTML, CSS, Git, VScode, PyCharm.</h2>
+      </div>
+      <div class="contacts">
+        <a class="contact" href="#">E-mail</a>
+        <a class="contact" href="https://github.com/Geo-nw/rsschool-cv">GitHub</a>
+      </div>
+      <hr size=2px width=max align="left" color="black">
+      <span class="line"></span>
     </div>
   </header>
 
-  <section>
-    <section class="content-about-me">
-      <div class="wrapper">
-        <div class="about-me">
-          <h3>About me</h3>
-          <p>
-            I have been working as an engineer at Institute of Physics of Kazan Federal University since 2016.
-            I am also a student of <a href="https://neural-university.com/">UAI</a> and <a href="https://community-z.com/events/js-rsschool-ge">RS School.</a> I previously took HTML and CSS courses at
-            <a href="http://en.specialist.ru/">“Specialist”.</a>
-            I have been independently studying Wordpress and basics of SEO. I have developed <a href="http://diving-vsegda.ru/">my own website.</a>
-            I do not have an experience in commercial software engineering.
-            I have management skills and executive experience in non-IT area. I am trying hard to acquire skills to work remotely.
-            My hobbies are scuba diving, traveling, cooking.
-          </p>
+  <section class="conteiner">
+    <div class="wrapper">
+      <div class="about-me">
+        <h3>About me:</h3>
+        <p>
+          I have been working as an engineer at Institute of Physics of Kazan Federal University since 2016.
+          I am also a student of <a href="https://neural-university.com/">UAI</a> and <a href="https://community-z.com/events/js-rsschool-ge">RS School.</a> I previously took HTML and CSS courses at
+          <a href="http://en.specialist.ru/">“Specialist”.</a>
+          I have been independently studying Wordpress and basics of SEO. I have developed <a href="http://diving-vsegda.ru/">my own website.</a>
+          I do not have an experience in commercial software engineering.
+          I have management skills and executive experience in non-IT area. I am trying hard to acquire skills to work remotely.
+          My hobbies are scuba diving, traveling, cooking.
+        </p>
+      </div>
+    </div>
+    <span class="line"></span>
+  </section>
+
+  <section class="conteiner">
+    <div class="wrapper">
+      <div class="skills">
+        <h2>Skills:</h2>
+        <span class="line"></span>
+        <div class="skills-block">
+          <h3>Python:</h3>
+          <ul>
+            <li>Tensorflow 2.0</li>
+            <li>Keras</li>
+            <li>Numpy</li>
+            <li>Pandas</li>
+          </ul>
+          <h3>AI Skills:</h3>
+          <ul>
+            <li>Time series forecasting</li>
+            <li>Reinforcement learning</li>
+            <li>Speech Recognition</li>
+            <li>Regression</li>
+            <li>Autoencoder</li>
+            <li>Genetic algorithms</li>
+            <li>Data clustering</li>
+            <li>Generative adversarial network (GAN)</li>
+          </ul>
+          <h3>My coursework:</h3>
+          <ul>
+            <li><a href="https://docs.google.com/document/d/14n4BAdrgz9Dei1uvwEtS5ALGqWX1mIFl7fdazK1Yc_Q/edit">Noise reduction in audio</a></li>
+          </ul>
+          <h3>Pro level homework:</h3>
+          <ul>
+            <li><a href="https://colab.research.google.com/drive/1sM0KjkidIgq2ZyGWmiwlttL89wA3C9jk?usp=sharing#scrollTo=KBH2A0fhPkIb">Fully connected neural networks</a></li>
+            <li><a href="https://colab.research.google.com/drive/1cJB-H3C7T8hIMuYkG0ZS2Lxhugd14cvw?usp=sharing">Convolutional neural networks</a></li>
+            <li><a href="https://colab.research.google.com/drive/1dqWA6M3KGDVrfsXh3I1ROjVzBGwr5S4v">Text processing using neural networks</a></li>
+          </ul>
+          <h3>Education</h3>
+          <p>2020 - 2021</p>
+          <strong>University of artificial intelligece</strong>
+          <ul>
+            <li><a href="https://neural-university.com/course_neural_pro">“Data Science and Neural Networks in Python”</a></li>
+            <li><a href="https://drive.google.com/file/d/1BRN6UoEvLpeSlPE6470jwpJ7qx_Ni2RJ/view?usp=sharing">Artificial intelligence methods in digital audio signal processing tasks</a></li>
+          </ul>
+          <p>2016 - 2016</p>
+          <strong>«Specialist» Computer Training Center</strong>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1H6QvsG3AeVYhmyLkPUbF_1u4NZYGKvEz/view?usp=sharing">HTML and CSS</a></li>
+            <li><a href="https://drive.google.com/file/d/12ByVusxFbhJ5LH7X7uAwZM49I5BPGtXy/view?usp=sharing">JavaScript</a></li>
+          </ul>
+          <p>1986 - 1993</p>
+          <strong>Kazan State University</strong>
+          <ul>
+            <li>Radiophysics and electronics.</li>
+            <ul>
+              <li>Radiophysicist.</li>
+            </ul>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+    <span class="line"></span>
+  </section>
 
-    <section class="content-skills">
-      <div class="wrapper">
-        <div class="skills">
-          <h2>Skills:</h2>
-          <span class="line"></span>
-          <div class="skills-block">
-            <h3>Python:</h3>
-            <ul>
-              <li>Tensorflow 2.0</li>
-              <li>Keras</li>
-              <li>Numpy</li>
-              <li>Pandas</li>
-            </ul>
-            <h3>AI Skills:</h3>
-            <ul>
-              <li>Time series forecasting</li>
-              <li>Reinforcement learning</li>
-              <li>Speech Recognition</li>
-              <li>Regression</li>
-              <li>Autoencoder</li>
-              <li>Genetic algorithms</li>
-              <li>Data clustering</li>
-              <li>Generative adversarial network (GAN)</li>
-            </ul>
-            <h3>My coursework:</h3>
-            <ul>
-              <li><a href="https://docs.google.com/document/d/14n4BAdrgz9Dei1uvwEtS5ALGqWX1mIFl7fdazK1Yc_Q/edit">Noise reduction in audio</a></li>
-            </ul>
-            <h3>Pro level homework:</h3>
-            <ul>
-              <li><a href="https://colab.research.google.com/drive/1sM0KjkidIgq2ZyGWmiwlttL89wA3C9jk?usp=sharing#scrollTo=KBH2A0fhPkIb">Fully connected neural networks</a></li>
-              <li><a href="https://colab.research.google.com/drive/1cJB-H3C7T8hIMuYkG0ZS2Lxhugd14cvw?usp=sharing">Convolutional neural networks</a></li>
-              <li><a href="https://colab.research.google.com/drive/1dqWA6M3KGDVrfsXh3I1ROjVzBGwr5S4v">Text processing using neural networks</a></li>
-            </ul>
-            <h3>Education</h3>
-            <p>2020 - 2021</p>
-            <strong>University of artificial intelligece</strong>
-            <ul>
-              <li><a href="https://neural-university.com/course_neural_pro">“Data Science and Neural Networks in Python”</a></li>
-              <li><a href="https://drive.google.com/file/d/1BRN6UoEvLpeSlPE6470jwpJ7qx_Ni2RJ/view?usp=sharing">Artificial intelligence methods in digital audio signal processing tasks</a></li>
-            </ul>
-            <p>2016 - 2016</p>
-            <strong>«Specialist» Computer Training Center</strong>
-            <ul>
-              <li><a href="https://drive.google.com/file/d/1H6QvsG3AeVYhmyLkPUbF_1u4NZYGKvEz/view?usp=sharing">HTML and CSS</a></li>
-              <li><a href="https://drive.google.com/file/d/12ByVusxFbhJ5LH7X7uAwZM49I5BPGtXy/view?usp=sharing">JavaScript</a></li>
-            </ul>
-            <p>1986 - 1993</p>
-            <strong>Kazan State University</strong>
-            <ul>
-              <li>Radiophysics and electronics.</li>
-              <ul>
-                <li>Radiophysicist.</li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <footer>
+    <div class="footer-year">
 
-    <footer>
-      <div class="footer-year">
+    </div>
+    <div class="footer-rss">
 
-      </div>
-      <div class="footer-rss">
-
-      </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 </html>
