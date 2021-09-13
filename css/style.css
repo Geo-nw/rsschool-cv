@@ -25,7 +25,7 @@ a{
   text-decoration: none;
   color: rgb(52, 10, 238);
 }
-a:hover {
+ a:hover {
   text-decoration: underline;
   color: rgb(52, 10, 238);
 }
@@ -42,15 +42,17 @@ a:hover {
   font-size: 45px;
   padding-bottom: 10px;
 }
-.skis-block {
+.skills-block {
   display: flex;
-  flex-flow: column;
+/*  flex-flow: column; */
+  justify-content: space-between;
 }
 .my-photo {
   display: flex;
   flex-flow: row;
+  object-fit: contain;
   width: 182px;
-  height: 200px;
+/*  height: 200px; */
   float: left;
 }
 .skills-name-text{
@@ -73,6 +75,12 @@ a:hover {
   font-size: 28px;
   text-decoration: none;
 }
+.none-point {
+  list-style-type: none;
+}
+.none-padding {
+  padding: 0;
+}
 .contacts {
   display: flex;
   flex-wrap: wrap;
@@ -83,15 +91,15 @@ a:hover {
   font-weight: 400;
   font-size: 18px;
 }
-.contact-post{
+.contact{
   display: flex;
   align-items: center;
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: 16px;
-  padding-right: 6px;
+  padding-bottom: 5px;
 }
-.post-icon {
+.contact-icon {
   display: flex;
   padding-right: 6px;
 }
@@ -109,7 +117,7 @@ a:hover {
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: 20px;
-  padding-right: 50px;
+/*  padding-right: 50px; */
 }
 .skills-block {
   display: flex;
@@ -119,7 +127,7 @@ a:hover {
 .skills-block-python {
   display: flex;
   flex-flow: column;
-  padding-right: 50px;
+/*  padding-right: 50px; */
   justify-content: space-between;
 }
 .ai-skills {
@@ -135,23 +143,40 @@ a:hover {
   display: flex;
   flex-flow: column;
 }
-.link:hover {
+/*.link:hover {
   border: 1px solid rgb(52, 10, 238);
-}
+} */
 .link-coursework {
   display: flex;
   align-items: center;
 }
 .link-coursework-pic {
+  max-height: 100%;
   width: 300px;
-  height: 200x;
 }
 .text-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: 20px;
-  padding-top: 50px;
-  padding-left: 90px;
+}
+.footer-blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-year {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-size: 50px;
+}
+.rss-logo {
+  width: 100px;
+  height: 150px;
+}
+.my-githab {
+  width: 40px;
+  height: 40px;
 }
