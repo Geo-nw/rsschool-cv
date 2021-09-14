@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My CV</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="/css/ligth.css">
+  <link rel="stylesheet" href="/css/styles/agate.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,13 +17,13 @@
     <div class="wrapper">
       <div class="header-block">
         <img class="my-photo" src="assets/img/II.png" alt="my-photo">
-        <div class="skis-block">
+        <div class="info-block">
         <h1 class="name-text">Georgy Rizvanov N.</h1>
           <h2 class="skills-name-text">Software junior</h2>
-          <h2 class="skills-text">Python  AI  JS  HTML  CSS  Git  VScode  PyCharm</h2>
+          <h2 class="skills-text">Python  AI  JS  HTML  CSS  Git  VSCode  PyCharm</h2>
         </div>
         <div class="contacts">
-          <p>Contacts:</p>
+<!--          <p>Contacts:</p> -->
           <ul class="none-padding">
             <li class="none-point">
               <a class="contact" href="#">
@@ -69,43 +72,63 @@
         <span class="line"></span>
         <div class="skills-block">
           <div class="skills-block-python">
+            <h4 class="style-h4">AI Skills:</h4>
+            <ul class="about-me-text">
+              <li>Generative adversarial network (GAN)</li>
+              <li>Time series forecasting</li>
+              <li>Reinforcement learning</li>
+              <li>Genetic algorithms</li>
+              <li>Speech Recognition</li>
+              <li>Autoencoder</li>
+            </ul>
             <h4 class="style-h4">Python:</h4>
             <ul class="about-me-text">
               <li>Tensorflow 2.0</li>
-              <li>Keras</li>
-              <li>Numpy</li>
               <li>Pandas</li>
+              <li>Numpy</li>
+              <li>Keras</li>
             </ul>
+          </div>
+          <div class="skills-block-python">
             <h4 class="style-h4">My coursework:</h4>
             <ul class="about-me-text">
               <li><a href="https://docs.google.com/document/d/14n4BAdrgz9Dei1uvwEtS5ALGqWX1mIFl7fdazK1Yc_Q/edit">Noise reduction in audio</a></li>
             </ul>
-          </div>
-          <div class="skills-block-python">
-            <h4 class="style-h4">AI Skills:</h4>
-            <ul class="about-me-text">
-              <li>Time series forecasting</li>
-              <li>Reinforcement learning</li>
-              <li>Speech Recognition</li>
-              <li>Regression</li>
-              <li>Autoencoder</li>
-              <li>Genetic algorithms</li>
-              <li>Data clustering</li>
-              <li>Generative adversarial network (GAN)</li>
-            </ul>
             <h4 class="style-h4">Pro level homework:</h4>
             <ul class="about-me-text">
+              <li><a href="https://colab.research.google.com/drive/1dqWA6M3KGDVrfsXh3I1ROjVzBGwr5S4v">Text processing using neural networks</a></li>
               <li><a href="https://colab.research.google.com/drive/1sM0KjkidIgq2ZyGWmiwlttL89wA3C9jk?usp=sharing#scrollTo=KBH2A0fhPkIb">Fully connected neural networks</a></li>
               <li><a href="https://colab.research.google.com/drive/1cJB-H3C7T8hIMuYkG0ZS2Lxhugd14cvw?usp=sharing">Convolutional neural networks</a></li>
-              <li><a href="https://colab.research.google.com/drive/1dqWA6M3KGDVrfsXh3I1ROjVzBGwr5S4v">Text processing using neural networks</a></li>
             </ul>
-        </div>
-        <div class="link">
+          </div>
+          <div class="link">
             <a href="https://docs.google.com/document/d/14n4BAdrgz9Dei1uvwEtS5ALGqWX1mIFl7fdazK1Yc_Q/edit" target="_blank">
             <img class="link-coursework-pic" src="/assets/img/work_curse.png" alt="coursework">
-          </a>
+            </a>
           <a class="text-link" href="">Coursework</a>
-        </div>
+          </div>
+      </div>
+      <div>
+        <h4 class="about-me-text">Code example:</h4>
+        <pre class="code-example">
+          <code>
+            dataset = df.values                 # Берем только значения массива(без индексов)
+            X = dataset[:,:-1].astype(float)    # Присваиваем им тип данных - float(с плавающей точкой) данным с 0 по 60 колонки
+            Y = dataset[:,-1]                   # Присваеваем значению Y данные из столбца с индексом 60
+            Y[Y == 'R'] = '0'                       # Если значение элемента столбца равно 'R', присваеваем ему значение '0'
+            Y[Y == 'M'] = '1'                       # Если значение элемента столбца равно 'Y', присваеваем ему значение '1'
+            Y = Y.astype(int)                   # Меняем тип данных столбца на 'int'(целочисленный тип данных)
+            print(X.shape)                      # Выводим размерность X
+            print(Y.shape)                      # Выводим размерность Y
+            print(Y)
+
+            x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, shuffle = True)
+            print (x_train.shape)
+            print (x_test.shape)
+            print (y_train.shape)
+            print (y_test.shape)
+          </code>
+        </pre>
       </div>
       <div class="line"></div>
         <div class="education">
@@ -113,8 +136,8 @@
           <p class="yars">2020 - 2021</p>
           <strong class="about-me-text">University of artificial intelligece</strong>
           <ul class="about-me-text">
-            <li><a href="https://neural-university.com/course_neural_pro">“Data Science and Neural Networks in Python”</a></li>
             <li><a href="https://drive.google.com/file/d/1BRN6UoEvLpeSlPE6470jwpJ7qx_Ni2RJ/view?usp=sharing">Artificial intelligence methods in digital audio signal processing tasks</a></li>
+            <li><a href="https://neural-university.com/course_neural_pro">“Data Science and Neural Networks in Python”</a></li>
           </ul>
           <p class="yars">2016 - 2016</p>
           <strong class="about-me-text">«Specialist» Computer Training Center</strong>
@@ -153,5 +176,7 @@
       </div>
     </div>
   </footer>
+  <script src="/light/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 </html>

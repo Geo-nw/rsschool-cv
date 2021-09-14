@@ -14,12 +14,17 @@ html{
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: 26px;
+  margin-bottom: 0;
 }
 .style-h4 {
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: 20px;
   margin-bottom: 0px;
+}
+.about-me {
+  display: flex;
+  flex-flow: column;
 }
 a{
   text-decoration: none;
@@ -30,30 +35,47 @@ a{
   color: rgb(52, 10, 238);
 }
 .header-block {
-  display: flex;
+  /* display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 .name-text {
   display: flex;
   margin: 0;
   font-family: "Roboto", serif;
   font-style: normal;
-  font-size: 45px;
+  font-size: calc(15px + (16 +16 * 0.7) * ((100vw - 320)/ 1200));
   padding-bottom: 10px;
 }
 .skills-block {
   display: flex;
-/*  flex-flow: column; */
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .name-text {
+    display: flex;
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-style: normal;
+/*    font-size: calc(15px + (16 + 16 * 0.7) * ((100vw - 320) / 1200)); */
+    padding-bottom: 10px;
+  }
+}
+  @media (max-width: 767px) {
+  .skills-block {
+    display: block;
+/*    flex-flow: column;
+    justify-content: space-between; */
+  }
+}
 .my-photo {
-  display: flex;
+/*  display: flex;
   flex-flow: row;
-  object-fit: contain;
-  width: 182px;
-/*  height: 200px; */
+  object-fit: contain; */
+  width: 250px;
+/*  height: 200px;
   float: left;
+  padding-right: 20px; */
 }
 .skills-name-text{
   display: flex;
@@ -61,7 +83,7 @@ a{
   margin: 0;
   font-family: "Roboto", serif;
   font-style: normal;
-  font-size: 28px;
+  font-size: calc(20px + 8 * (100vw / 1200));
   text-decoration: none;
   padding-bottom: 30px;
 }
@@ -72,7 +94,7 @@ a{
   white-space: pre-wrap;
   font-family: "Roboto", serif;
   font-style: normal;
-  font-size: 28px;
+  font-size: calc(20px + 8 * (100vw / 1200));
   text-decoration: none;
 }
 .none-point {
@@ -80,23 +102,26 @@ a{
 }
 .none-padding {
   padding: 0;
+
+  padding-left: 10px;
+
 }
 .contacts {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 205px;
   font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 30px;
+  font-size: calc(14px + 1 * (100vw / 1200));
 }
 .contact{
   display: flex;
   align-items: center;
   font-family: "Roboto", serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: calc(14px + 6 * (100vw / 1200));
   padding-bottom: 5px;
 }
 .contact-icon {
@@ -107,28 +132,26 @@ a{
   display: flex;
   padding-right: 6px;
 }
-.line{
-  width: 100%;
+.line {
+  max-width: 100%;
   height: 3px;
-  margin-top: 25px;
   background: black;
 }
 .about-me-text {
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: 20px;
-/*  padding-right: 50px; */
+  margin-top: 5px;
+  line-height: 1.7
 }
-.skills-block {
+.info-block {
   display: flex;
-  flex-flow: row;
-/*  justify-content: space-between; */
+  flex-flow: column;
+  justify-content: center;
 }
 .skills-block-python {
   display: flex;
   flex-flow: column;
-/*  padding-right: 50px; */
-  justify-content: space-between;
 }
 .ai-skills {
   display: flex;
@@ -143,15 +166,12 @@ a{
   display: flex;
   flex-flow: column;
 }
-/*.link:hover {
-  border: 1px solid rgb(52, 10, 238);
-} */
 .link-coursework {
   display: flex;
   align-items: center;
 }
 .link-coursework-pic {
-  max-height: 100%;
+  max-width: 100%;
   width: 300px;
 }
 .text-link {
@@ -161,6 +181,12 @@ a{
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: 20px;
+}
+.code-example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
 .footer-blocks {
   display: flex;
