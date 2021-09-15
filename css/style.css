@@ -22,10 +22,6 @@ html{
   font-size: 20px;
   margin-bottom: 0px;
 }
-.about-me {
-  display: flex;
-  flex-flow: column;
-}
 a{
   text-decoration: none;
   color: rgb(52, 10, 238);
@@ -34,52 +30,32 @@ a{
   text-decoration: underline;
   color: rgb(52, 10, 238);
 }
-.header-block {
-  /* display: flex;
-  flex-flow: row;
-  justify-content: space-between; */
-}
 .name-text {
-  display: flex;
   margin: 0;
   font-family: "Roboto", serif;
   font-style: normal;
-  font-size: calc(15px + (16 +16 * 0.7) * ((100vw - 320)/ 1200));
+  font-size: calc(30px + 8 * (100vw / 1200));
   padding-bottom: 10px;
 }
 .skills-block {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
-  .name-text {
-    display: flex;
-    margin: 0;
-    font-family: "Roboto", serif;
-    font-style: normal;
-/*    font-size: calc(15px + (16 + 16 * 0.7) * ((100vw - 320) / 1200)); */
-    padding-bottom: 10px;
-  }
-}
   @media (max-width: 767px) {
   .skills-block {
     display: block;
-/*    flex-flow: column;
-    justify-content: space-between; */
   }
 }
 .my-photo {
-/*  display: flex;
-  flex-flow: row;
-  object-fit: contain; */
   width: 250px;
-/*  height: 200px;
-  float: left;
-  padding-right: 20px; */
+}
+@media (max-width: 767px) {
+  .my-photo {
+    width: 250px;
+    padding-left: 26px;
+  }
 }
 .skills-name-text{
-  display: flex;
-  align-items: center;
   margin: 0;
   font-family: "Roboto", serif;
   font-style: normal;
@@ -88,28 +64,18 @@ a{
   padding-bottom: 30px;
 }
 .skills-text{
-  display: flex;
-  align-items: center;
   margin: 0;
-  white-space: pre-wrap;
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: calc(20px + 8 * (100vw / 1200));
-  text-decoration: none;
 }
 .none-point {
   list-style-type: none;
 }
 .none-padding {
-  padding: 0;
-
   padding-left: 10px;
-
 }
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 400;
@@ -165,6 +131,7 @@ a{
 .link {
   display: flex;
   flex-flow: column;
+  align-items: center;
 }
 .link-coursework {
   display: flex;
@@ -183,10 +150,7 @@ a{
   font-size: 20px;
 }
 .code-example {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
+  margin-bottom: 20px;
 }
 .footer-blocks {
   display: flex;
