@@ -69,10 +69,10 @@ a{
   font-style: normal;
   font-size: calc(20px + 8 * (100vw / 1200));
 }
-.none-point {
+.contact-none-point {
   list-style-type: none;
 }
-.none-padding {
+.contact-none-padding {
   padding-left: 10px;
 }
 .contacts {
