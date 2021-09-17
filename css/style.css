@@ -67,7 +67,7 @@ a{
   margin: 0;
   font-family: "Roboto", serif;
   font-style: normal;
-  font-size: calc(20px + 8 * (100vw / 1200));
+  font-size: calc(15px + 8 * (100vw / 1200));
 }
 .contact-none-point {
   list-style-type: none;
