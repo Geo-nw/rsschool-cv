@@ -151,6 +151,8 @@ a{
 }
 .code-example {
   margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 .footer-blocks {
   display: flex;
