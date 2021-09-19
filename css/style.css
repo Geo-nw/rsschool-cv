@@ -9,6 +9,7 @@ html {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10px;
 }
 .style-h3 {
   font-family: "Roboto", serif;
@@ -52,7 +53,7 @@ a{
 @media (max-width: 767px) {
   .my-photo {
     width: 250px;
-    padding-left: 26px;
+    padding-left: 16px;
   }
 }
 .skills-name-text{
@@ -132,6 +133,9 @@ a{
   display: flex;
   flex-flow: column;
   align-items: center;
+  text-align: center;
+  max-width: 100%;
+  width: 300px;
 }
 .link-coursework {
   display: flex;
@@ -140,6 +144,7 @@ a{
 .link-coursework-pic {
   max-width: 100%;
   width: 300px;
+  padding-top: 30px;
 }
 .text-link {
   display: flex;
@@ -148,6 +153,7 @@ a{
   font-family: "Roboto", serif;
   font-style: normal;
   font-size: 20px;
+  padding-bottom: 10px;
 }
 .code-example {
   margin-bottom: 20px;
