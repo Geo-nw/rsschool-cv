@@ -112,54 +112,54 @@
             </a>
           </div>
         </div>
-      <div>
-        <h4 class="about-me-text">Code example:</h4>
-        <pre class="code-example">
-          <code>
-            dataset = df.values                 # Берем только значения массива(без индексов)
-            X = dataset[:,:-1].astype(float)    # Присваиваем им тип данных - float(с плавающей точкой) данным с 0 по 60 колонки
-            Y = dataset[:,-1]                   # Присваеваем значению Y данные из столбца с индексом 60
-            Y[Y == 'R'] = '0'                       # Если значение элемента столбца равно 'R', присваеваем ему значение '0'
-            Y[Y == 'M'] = '1'                       # Если значение элемента столбца равно 'Y', присваеваем ему значение '1'
-            Y = Y.astype(int)                   # Меняем тип данных столбца на 'int'(целочисленный тип данных)
-            print(X.shape)                      # Выводим размерность X
-            print(Y.shape)                      # Выводим размерность Y
-            print(Y)
-
-            x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, shuffle = True)
-            print (x_train.shape)
-            print (x_test.shape)
-            print (y_train.shape)
-            print (y_test.shape)
-          </code>
-        </pre>
       </div>
-      <div class="line"></div>
-        <div class="education">
-          <h3 class="style-h3">Education:</h3>
-          <p class="yars">2020 - 2021</p>
-          <strong class="about-me-text">University of artificial intelligece</strong>
-          <ul class="about-me-text">
-            <li><a href="https://drive.google.com/file/d/1BRN6UoEvLpeSlPE6470jwpJ7qx_Ni2RJ/view?usp=sharing" target="_blank">Artificial intelligence methods in digital audio signal processing tasks</a></li>
-            <li><a href="https://neural-university.com/course_neural_pro" target="_blank">“Data Science and Neural Networks in Python”</a></li>
-          </ul>
-          <p class="yars">2016 - 2016</p>
-          <strong class="about-me-text">«Specialist» Computer Training Center</strong>
-          <ul class="about-me-text">
-            <li><a href="https://drive.google.com/file/d/1H6QvsG3AeVYhmyLkPUbF_1u4NZYGKvEz/view?usp=sharing" target="_blank">HTML and CSS</a></li>
-            <li><a href="https://drive.google.com/file/d/12ByVusxFbhJ5LH7X7uAwZM49I5BPGtXy/view?usp=sharing" target="_blank">JavaScript</a></li>
-          </ul>
-          <p class="yars">1986 - 1993</p>
-          <strong class="about-me-text">Kazan State University</strong>
-          <ul class="about-me-text">
-            <li>Radiophysics and electronics.</li>
-            <li>Radiophysicist.</li>
-          </ul>
-        </div>
+      <h4 class="about-me-text">Code example:</h4>
+      <pre class="code-example">
+        <code>
+          dataset = df.values                 # Берем только значения массива(без индексов)
+          X = dataset[:,:-1].astype(float)    # Присваиваем им тип данных - float(с плавающей точкой) данным с 0 по 60 колонки
+          Y = dataset[:,-1]                   # Присваеваем значению Y данные из столбца с индексом 60
+          Y[Y == 'R'] = '0'                       # Если значение элемента столбца равно 'R', присваеваем ему значение '0'
+          Y[Y == 'M'] = '1'                       # Если значение элемента столбца равно 'Y', присваеваем ему значение '1'
+          Y = Y.astype(int)                   # Меняем тип данных столбца на 'int'(целочисленный тип данных)
+          print(X.shape)                      # Выводим размерность X
+          print(Y.shape)                      # Выводим размерность Y
+          print(Y)
+
+          x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, shuffle = True)
+          print (x_train.shape)
+          print (x_test.shape)
+          print (y_train.shape)
+          print (y_test.shape)
+        </code>
+      </pre>
+    </div>
+    <div class="line"></div>
+    <div class="wrapper">
+      <div class="education">
+        <h3 class="style-h3">Education:</h3>
+        <p class="yars">2020 - 2021</p>
+        <strong class="about-me-text">University of artificial intelligece</strong>
+        <ul class="about-me-text">
+          <li><a href="https://drive.google.com/file/d/1BRN6UoEvLpeSlPE6470jwpJ7qx_Ni2RJ/view?usp=sharing" target="_blank">Artificial intelligence methods in digital audio signal processing tasks</a></li>
+          <li><a href="https://neural-university.com/course_neural_pro" target="_blank">“Data Science and Neural Networks in Python”</a></li>
+        </ul>
+        <p class="yars">2016 - 2016</p>
+        <strong class="about-me-text">«Specialist» Computer Training Center</strong>
+        <ul class="about-me-text">
+          <li><a href="https://drive.google.com/file/d/1H6QvsG3AeVYhmyLkPUbF_1u4NZYGKvEz/view?usp=sharing" target="_blank">HTML and CSS</a></li>
+          <li><a href="https://drive.google.com/file/d/12ByVusxFbhJ5LH7X7uAwZM49I5BPGtXy/view?usp=sharing" target="_blank">JavaScript</a></li>
+        </ul>
+        <p class="yars">1986 - 1993</p>
+        <strong class="about-me-text">Kazan State University</strong>
+        <ul class="about-me-text">
+          <li>Radiophysics and electronics.</li>
+          <li>Radiophysicist.</li>
+        </ul>
       </div>
     </div>
-  <div class="line"></div>
-  </section>
+</section>
+<div class="line"></div>
 </main>
 
   <footer>
@@ -183,6 +183,6 @@
   </footer>
   <script src="light/highlight.min.js"></script>
   <script>hljs.highlightAll()</script>
-  <script scr = "index.js"></script>
+  <script src = "index.js"></script>
 </body>
 </html>
