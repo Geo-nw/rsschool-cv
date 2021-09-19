@@ -116,14 +116,14 @@
       <h4 class="about-me-text">Code example:</h4>
       <pre class="code-example">
         <code>
-          dataset = df.values                 # Берем только значения массива(без индексов)
-          X = dataset[:,:-1].astype(float)    # Присваиваем им тип данных - float(с плавающей точкой) данным с 0 по 60 колонки
-          Y = dataset[:,-1]                   # Присваеваем значению Y данные из столбца с индексом 60
-          Y[Y == 'R'] = '0'                       # Если значение элемента столбца равно 'R', присваеваем ему значение '0'
-          Y[Y == 'M'] = '1'                       # Если значение элемента столбца равно 'Y', присваеваем ему значение '1'
-          Y = Y.astype(int)                   # Меняем тип данных столбца на 'int'(целочисленный тип данных)
-          print(X.shape)                      # Выводим размерность X
-          print(Y.shape)                      # Выводим размерность Y
+          dataset = df.values                 
+          X = dataset[:,:-1].astype(float)    
+          Y = dataset[:,-1]                   
+          Y[Y == 'R'] = '0'                   
+          Y[Y == 'M'] = '1'                   
+          Y = Y.astype(int)                   
+          print(X.shape)                      
+          print(Y.shape)                      
           print(Y)
 
           x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, shuffle = True)
